@@ -1,0 +1,58 @@
+#+title: Command Line Parsing with a Metaprogram
+#+date: December 6th, 2021
+
+# NOTE: Only write the abstract after ending the investigation.
+
+* Abstract
+  
+With work, using a metaprogram to compile source code implementing
+command line parsing can provide a uniform interface that is language
+agnostic. The problem of command line parsing is one that must be
+solved for every new command line utility written, regardless of the
+implementation language. Although there are solutions for this
+common problem for each programming language in the form of
+libraries, it requires learning the specifics of each
+library. Additionally, this approach removes the need to add a command
+line parsing library as a dependency to a project. This can be
+attractive to programmers who share an aesthetic for writing programs
+with a minimum number of external dependencies.
+
+* Table
+
+  Here is a table.
+
+** Incoming table
+
+  | one | two | three | four |
+  |-----+-----+-------+------|
+  |   1 |   2 |     3 |    4 |
+  |   5 |   6 |     7 |    8 |
+  |   9 |  10 |    11 |   12 |
+  
+  Look, does this work?
+
+** A literate program
+
+  #+name: An example file.
+  #+begin_src c
+    #include <stdio.h>
+
+    int main(void)
+    {
+            <<Print a message to the user>>
+            return 0;        
+    }
+  #+end_src
+
+  And then, we can print the message:
+  #+name: Print a message to the user
+  #+begin_src c
+    puts("Hello, world.");
+  #+end_src
+
+** Another test
+  Here is a nice quotation:
+  
+  #+begin_quote
+  What are blah blah doing blah blah waaaaaa
+  #+end_quote

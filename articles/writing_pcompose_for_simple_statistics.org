@@ -1,0 +1,16 @@
+#+title: Writing =pcompose= for Simple Statistics on Program Time Efficiency
+#+date: December 6th, 2021
+
+# NOTE: Only write the abstract after ending the investigation.
+
+* Abstract
+
+Collecting simple statistics for how long various implementations of
+the same program take to execute is an easy way of empirically
+evaluating the pros and cons of tradeoffs debated during the
+implementation of a program. We can write a simple script in Bash to
+achieve this by utilizing Gnuplot as a plotting utility and some way
+to measure time of execution for a process. First, the =time= keyword
+is used in Bash to collect these measurements. Then, an implementation
+of a program that allows sub-millisecond measurements to be made is
+written and the implications of this are explored.

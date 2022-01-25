@@ -1,0 +1,9 @@
+#+title: Gluing Together a Personal Website With Bash and Org-Mode
+#+date: December 6th, 2021
+
+* Introduction
+
+Since I am currently interested in exploring shell scripting, I chose
+to write as much of the logic needed to generate the static portions
+of this website by assembling functionality from Emacs and other text
+processing tools. 
